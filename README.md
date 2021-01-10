@@ -1,23 +1,25 @@
 # NotificationDemo
-Synopsis
+## Synopsis
 Generic Notification System
 This project demonstrate sample generic library for notification.
 
 Following capabilities are supported:
 
-Accept messages including from, to and subject
-Ability to notify on multiple channels (email, slack)
-Deliver messages in correct order
-Technologies
+1. Accept messages including from, to and subject
+2. Ability to notify on multiple channels (email, slack)
+3. Deliver messages in correct order
+
+
+## Technologies
 Spring Boot 
 Jackson
 spring-email
 
-Installation
+## Installation
 Run mvn spring-boot:run to start the server 
 
 
-API Reference
+## API Reference
 API 1: Notify to a Channel
 
 URL: http://localhost:8080/api/v1/notification/notify/EMAIL
@@ -27,7 +29,7 @@ This sends given message to a specified channel like slack or email. Where the c
 e.g: http://localhost:8080/api/v1/notification/notify/EMAIL
 with body as:
 
-EMAIL
+## EMAIL
 {  
    "text": "Body of the message",  
    "from": "from@gmail.com",  
@@ -37,7 +39,7 @@ EMAIL
  
  e.g: http://localhost:8080/api/v1/notification/notify/SLACK
 
- SLACK
+ ## SLACK
  {
  "text":"hello","username":"new slack"
  }
@@ -61,7 +63,7 @@ e.g: http://localhost:8080/api/v1.0/notifier/notifyAll with body as:
  
  
  
- Note :
+ # Note :
  
  SignUp in slack 
  add slack.channel.api in application.properties file by creating a new URL in slack website . Then run the appliction for slack 
