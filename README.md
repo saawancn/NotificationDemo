@@ -65,5 +65,11 @@ e.g: http://localhost:8080/api/v1.0/notifier/notifyAll with body as:
  
  # Note :
  
+ add username and password
+spring.mail.username=
+spring.mail.password=
+in application.properties file and also enable less secure apps in gmail->ManageAccount->Security->Enable less secure apps and run the application for Email
+
+ 
  SignUp in slack 
  add slack.channel.api in application.properties file by creating a new URL in slack website . Then run the appliction for slack 
